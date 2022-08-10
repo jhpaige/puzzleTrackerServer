@@ -22,6 +22,4 @@ const puzzleSchema = new Schema({
     times: { type: Array, required: true },
 })
 
-const Puzzle = mongoose.model('puzzle', puzzleSchema);
-
-module.exports = { Puzzle };
+module.exports = mongoose.model('puzzle', puzzleSchema);
