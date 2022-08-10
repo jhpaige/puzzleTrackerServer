@@ -1,1 +1,3 @@
 # puzzleTrackerServer
+
+Server for puzzleTracker
