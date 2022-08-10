@@ -1,0 +1,25 @@
+{
+  "name": "puzzletrackerserver",
+  "version": "1.0.0",
+  "description": "Server for puzzleTracker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhpaige/puzzleTrackerServer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhpaige/puzzleTrackerServer/issues"
+  },
+  "homepage": "https://github.com/jhpaige/puzzleTrackerServer#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
+}
