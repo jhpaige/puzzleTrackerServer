@@ -3,7 +3,7 @@ const puzzleTrackerController = require('./puzzleTrackerController');
 const router = express.Router();
 
 router.get('/',
-  puzzleTrackerController.getPuzzle,
+  puzzleTrackerController.getPuzzles,
   (req, res) => res.status(200).json()
 );
 

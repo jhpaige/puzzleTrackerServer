@@ -3,7 +3,7 @@ const models = require('./puzzleTrackerModel');
 const puzzleTrackerController = {};
 
 // Get puzzles
-puzzleTrackerController.getPuzzle = (req, res, next) => {
+puzzleTrackerController.getPuzzles = (req, res, next) => {
 
 }
 
