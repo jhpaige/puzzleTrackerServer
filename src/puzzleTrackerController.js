@@ -38,11 +38,11 @@ puzzleTrackerController.postPuzzle = async (req, res, next) => {
 // Edits puzzle with request that has name, image, and times in body
 puzzleTrackerController.patchPuzzle = async (req, res, next) => {
   try {
-    const doc = await Puzzle.findOne({name: req.body.name});
-    doc.name = req.body.name;
-    doc.image = req.body.image;
-    doc.times = req.body.times;
-    res.locals.name = doc.name;
+    const doc = await Puzzle.findOne({name: req.body.oldName});
+    doc.name = req.body.newName;
+    doc.imageURL = req.body.imageURL;
+    doc.fastestTime = req.body.fastestTime;
+    res.locals.newPuzzle = doc;
     doc.save();
     return next();
   } catch (e) {

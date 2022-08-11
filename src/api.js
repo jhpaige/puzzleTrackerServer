@@ -4,10 +4,8 @@ const router = express.Router();
 
 router.get('/',
   puzzleTrackerController.getPuzzles,
-  (req, res) => {
-    console.log(res.locals.puzzles);
+  (req, res) => 
     res.status(200).send(res.locals.puzzles)
-  }
 );
 
 router.post('/',
@@ -17,7 +15,7 @@ router.post('/',
 
 router.patch('/',
   puzzleTrackerController.patchPuzzle,
-  (req, res) => res.status(200).send(req.body.name + ' update successful')
+  (req, res) => res.status(200).json(req.body.newPuzzle)
 );
 
 router.delete('/',

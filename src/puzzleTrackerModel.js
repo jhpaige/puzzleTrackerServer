@@ -17,9 +17,9 @@ const Schema = mongoose.Schema;
 
 // Sets a schema for each puzzle
 const puzzleSchema = new Schema({
-    image: { type: String, required: true },
+    imageURL: { type: String, required: true },
     name: { type: String, required: true },
-    times: { type: Array, required: true },
+    fastestTime: { type: Number, required: true },
 })
 
 module.exports = mongoose.model('puzzle', puzzleSchema);
