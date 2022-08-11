@@ -4,7 +4,10 @@ const router = express.Router();
 
 router.get('/',
   puzzleTrackerController.getPuzzles,
-  (req, res) => res.status(200).json(res.locals.puzzles)
+  (req, res) => {
+    console.log(res.locals.puzzles);
+    res.status(200).send(res.locals.puzzles)
+  }
 );
 
 router.post('/',

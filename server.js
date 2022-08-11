@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 
 const apiRouter = require('./src/api');
 
@@ -8,6 +9,9 @@ const PORT = 3000;
 // Allows put/post requests to be parsed to objects/strings respectively
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Allows request from website to be made to other website
+app.use(cors());
 
 // Defining router for api
 app.use('/api', apiRouter);
