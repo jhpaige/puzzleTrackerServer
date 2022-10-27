@@ -7,7 +7,7 @@ PuzzleTracker and puzzleTrackerServer are integrated client/server repositories 
 Clone puzzleTracker and puzzleTrackerServer to local machine. Afterwards, install necessary packages in both repositories.
 
 ```bash
-npm init && npm install
+npm install
 ```
 
 ## Usage
